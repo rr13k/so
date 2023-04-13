@@ -1,0 +1,83 @@
+:root {
+    --color: #ffffff;
+    --base-btn-bg-color: #ecf5ff;
+    --success-btn-bg-color: #198754;
+    --primary-btn-bg-color: #409eff;
+    --info-btn-bg-color: #909399;
+    --warning-btn-bg-color: #ffc107;
+    --danger-btn-bg-color: #dc3545;
+    --btn-border-radius: 5px;
+}
+
+@mixin button-variant($background-color) {
+    color: var(--color);
+    border: solid 1px var(--base-btn-bg-color);
+    background-color: $background-color;
+
+    &.outline{
+        background-color: transparent;
+        color: $background-color;
+        border: solid 1px $background-color;
+    }
+
+    &.text{
+        color: $background-color;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: var(--btn-border-radius);
+    background-color: var(--color);
+    margin: 0.25rem 0.125rem;
+    color: black;
+    border: solid 1px var(--base-btn-bg-color);
+    cursor: pointer;
+
+    &.text{
+        border: none;
+    }
+
+    &:active{
+        mix-blend-mode: multiply;
+        opacity: 1 !important;
+    }
+
+    &:hover {
+        mix-blend-mode: multiply;
+        opacity: 0.8;
+    }
+
+    &.disabled {
+        cursor: default;
+        pointer-events:none !important;
+        opacity: 0.5;
+        user-select: none;
+    }
+
+    &.primary {
+        @include button-variant(var(--primary-btn-bg-color));
+    }
+
+    &.success {
+        @include button-variant(var(--success-btn-bg-color));
+    }
+
+    &.info {
+        @include button-variant(var(--info-btn-bg-color));
+    }
+
+    &.warning {
+        @include button-variant(var(--warning-btn-bg-color));
+    }
+
+    &.danger {
+        @include button-variant(var(--danger-btn-bg-color));
+    }
+
+    >svg {
+        vertical-align: bottom;
+    }
+}

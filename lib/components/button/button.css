@@ -1,0 +1,49 @@
+:root {
+  --color: #ffffff;
+  --base-btn-bg-color: #ecf5ff;
+  --success-btn-bg-color: #198754;
+  --primary-btn-bg-color: #409eff;
+  --info-btn-bg-color: #909399;
+  --warning-btn-bg-color: #ffc107,
+  --danger-btn-bg-color: #dc3545,
+  --btn-border-radius: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: var(--btn-border-radius);
+  background-color: var(--color);
+  margin: 0.25rem 0.125rem;
+  color: black;
+  border: solid 1px var(--base-btn-bg-color);
+}
+button:hover {
+  background-color: var(--base-btn-bg-color);
+  border: solid 1px var(--base-btn-bg-color);
+  color: black;
+}
+button.primary {
+  color: var(--color);
+  border: solid 1px var(--base-btn-bg-color);
+  background-color: var(--primary-btn-bg-color);
+}
+button.success {
+  color: var(--color);
+  border: solid 1px var(--base-btn-bg-color);
+  background-color: var(--success-btn-bg-color);
+}
+button.info {
+  color: var(--color);
+  border: solid 1px var(--base-btn-bg-color);
+  background-color: var(--info-btn-bg-color);
+}
+button.warning {
+  color: var(--color);
+  border: solid 1px var(--base-btn-bg-color);
+  background-color: var(--warning-btn-bg-color);
+}
+button.danger {
+  color: var(--color);
+  border: solid 1px var(--base-btn-bg-color);
+  background-color: var(--danger-btn-bg-color);
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h2>按钮</h2>
+    <details>
+        <summary>按钮组件</summary>
+        <h3>常规</h3>
+        <div>
+            <button>默认</button>
+            <button class="primary">主要</button>
+            <button class="success">成功</button>
+            <button class="info">信息</button>
+            <button class="warning">警告</button>
+            <button class="danger">致命</button>
+        </div>
+    
+        <h3>轮廓线</h3>
+        <div>
+            <button>默认</button>
+            <button class="primary outline">主要</button>
+            <button class="success outline">成功</button>
+            <button class="info outline">信息</button>
+            <button class="warning outline">警告</button>
+            <button class="danger outline">致命</button>
+        </div>
+    
+        <h3>文字按钮</h3>
+        <div>
+            <button class="text">默认</button>
+            <button class="primary text">主要</button>
+            <button class="success text">成功</button>
+            <button class="info text">信息</button>
+            <button class="warning text">警告</button>
+            <button class="danger text">致命</button>
+        </div>
+    
+        <h3>禁用</h3>
+        <div>
+            <button class="disabled">默认</button>
+            <button class="primary disabled">主要</button>
+            <button class="success disabled">成功</button>
+            <button class="info disabled">信息</button>
+            <button class="warning disabled">警告</button>
+            <button class="danger disabled">致命</button>
+        </div>
+    
+        <h3>带图标</h3>  <span>图标来自: <a href="https://icon-sets.iconify.design/zondicons/arrow-thick-right/">iconify</a></span>
+        <div>
+            <button class="primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="currentColor" d="M10 2v16a8 8 0 1 0 0-16zm0 18a10 10 0 1 1 0-20a10 10 0 0 1 0 20z" />
+                </svg>
+                主要
+            </button>
+           
+            <button class="success">
+                成功
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10 7H2v6h8v5l8-8l-8-8v5z"/></svg>
+            </button>
+        </div>
+    </details>
+
+    <h2>下拉框</h2>
+    <details>
+        <summary>下拉框组件</summary>
+        
+        <h3>常规下拉</h3>
+        <select>
+            <option value="option1">选项 1</option>
+            <option value="option2">选项 2</option>
+            <option value="option3">选项 3</option>
+        </select>
+    </details>
+
+
+    <h2>折叠面板</h2>
+    <details>
+        <summary>这是面板名称, 点击后将获得一个苹果</summary>
+        <p>给你，这是约定好的🍎～</p>
+    </details>
+
+
+</body>
+
+</html>
+
+<script type="module">
+    import './src/index.scss';
+</script>

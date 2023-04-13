@@ -1,0 +1,37 @@
+{
+  "name": "@rr13k/so",
+  "version": "1.0.0",
+  "description": "## 介绍",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-button": "",
+    "publish":"npm publish",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rr13k/so.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rr13k/so/issues"
+  },
+  "homepage": "https://github.com/rr13k/so#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.0",
+    "vite": "^4.2.1",
+    "vite-plugin-sass": "^0.1.0"
+  }
+}
