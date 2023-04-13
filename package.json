@@ -1,6 +1,6 @@
 {
   "name": "@rr13k/so",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "access": "public",
   "description": "## 介绍",
   "main": "lib/index.css",
@@ -9,14 +9,17 @@
     "test": "tests"
   },
   "exports": {
-    "./button": "./lib/button.css",
-    "./select": "./lib/select.css"
+    "./button": "./lib/button/button.css",
+    "./select": "./lib/select/select.css",
+    ".":{
+      "default": "./lib/index.css"
+    }
   },
   "scripts": {
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-button": "",
-    "publish":"npm publish --access public",
+    "publish": "npm publish --access public",
     "dev": "vite"
   },
   "repository": {
@@ -29,7 +32,9 @@
     "url": "https://github.com/rr13k/so/issues"
   },
   "homepage": "https://github.com/rr13k/so#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@rr13k/so": "^1.0.1"
+  },
   "devDependencies": {
     "@types/node": "^18.15.11",
     "gulp": "^4.0.2",
