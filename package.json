@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "access": "public",
   "description": "## 介绍",
-  "main": "index.js",
+  "main": "lib/index.css",
   "directories": {
     "doc": "docs",
     "test": "tests"
+  },
+  "exports": {
+    "./button": "./lib/button.css",
+    "./select": "./lib/select.css"
   },
   "scripts": {
     "build": "gulp",
