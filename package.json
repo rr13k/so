@@ -1,6 +1,7 @@
 {
   "name": "@rr13k/so",
   "version": "1.0.0",
+  "access": "public",
   "description": "## 介绍",
   "main": "index.js",
   "directories": {
@@ -11,7 +12,7 @@
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-button": "",
-    "publish":"npm publish",
+    "publish":"npm publish --access public",
     "dev": "vite"
   },
   "repository": {
