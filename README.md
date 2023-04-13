@@ -7,7 +7,13 @@
 
 
 ```js
-// 引入button
+// 全量引入
+// 在js中
+import '@rr13k/so';
+// 在css中
+@import '@rr13k/so';
+
+// 按需引入button
 @import "npm i @rr13k/so/lib/button"
 ```
 
